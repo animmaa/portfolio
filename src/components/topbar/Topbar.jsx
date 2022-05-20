@@ -1,5 +1,7 @@
 import './topbar.scss';
 import { Person, Mail } from '@mui/icons-material';
+import iconegit from '../../assets/icons8-github-50.png';
+import iconelink from '../../assets/icons8-linkedin-50.png';
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -16,12 +18,12 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </div>
           <div>
             <a href="https://gist.github.com/animmaa/">
-              <img src="assets/icons8-github-50.png" alt="" />
+              <img src={iconegit} alt="" />
             </a>
           </div>
           <div>
             <a href="https://www.linkedin.com/in/davy-lebris-2b422a224">
-              <img src="assets/icons8-linkedin-50.png" alt="" />
+              <img src={iconelink} alt="" />
             </a>
           </div>
         </div>

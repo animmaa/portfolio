@@ -1,3 +1,6 @@
+import profil from '../../assets/profile-pic.png';
+import hypno from '../../assets/hypno.png';
+import fleche from '../../assets/vers-le-bas.png';
 import './intro.scss';
 
 const Intro = () => {
@@ -5,20 +8,20 @@ const Intro = () => {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img className="image-profil" src="assets/profile-pic.png" alt="" />
-          <img className="image-hypno" src="assets/hypno.png" alt="" />
+          <img className="image-profil" src={profil} alt="" />
+          <img className="image-hypno" src={hypno} alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>hi there, i'm</h2>
-          <h1>animma</h1>
+          <h2>Bienvenue, je suis</h2>
+          <h1>Davy</h1>
           <h3>
-            freelance <span>developper</span>
+            developpeur <span>web</span>
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/vers-le-bas.png" alt="" />
+          <img src={fleche} alt="" />
         </a>
       </div>
     </div>
