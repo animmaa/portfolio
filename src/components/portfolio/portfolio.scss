@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 .portfolio {
   background-color: white;
@@ -7,7 +7,12 @@
   align-items: center;
 
   h1 {
-    font-size: 70px;
+    font-size: 40px;
+    margin-top: 30px;
+    @include tablet {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
   }
   ul {
     margin: 30px;
