@@ -20,7 +20,7 @@ const Intro = () => {
             developpeur <span>web</span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#contact">
           <img src={fleche} alt="" />
         </a>
       </div>

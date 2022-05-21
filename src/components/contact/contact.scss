@@ -2,8 +2,15 @@
 
 .contact {
   background-color: lightblue;
-  h2, h1, p {
+  h2,
+  h1,
+  p {
     margin: 15px 0 35px 20px;
+  }
+  p {
+    @include desktop {
+      font-size: 25px;
+    }
   }
   .orga-icon {
     display: grid;
@@ -36,4 +43,20 @@
       }
     }
   }
+  a {
+      display: flex;
+      justify-content: center;
+      bottom: 10px;
+
+      img {
+        width: 50px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
 }
