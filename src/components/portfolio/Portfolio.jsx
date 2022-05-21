@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
+import flecheHaut from '../../assets/vers-le-haut.png';
 import './portfolio.scss';
 import { featuredPortfolio, webPortfolio } from '../../data';
 
@@ -58,10 +59,17 @@ const Portfolio = () => {
             Certains projets sont encore en cours de finition et d'autre ne sont
             pas encore mise en ligne. Je mets les liens github en attendant le
             déployement.
-            <br /><br /> Veuillez m'excuser pour la gêne occasionnée et merci pour
+            <br />
+            <br /> Veuillez m'excuser pour la gêne occasionnée et merci pour
             votre patience...
           </i>
         </p>
+      </div>
+      <div className='flech'>
+
+      <a href="#contact">
+        <img src={flecheHaut} alt="" />
+      </a>
       </div>
     </div>
   );

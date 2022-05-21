@@ -14,3 +14,9 @@ $widthDesktop: 1024px;
     @content;
   }
 } ;
+
+@mixin tabletMax {
+  @media (max-width: #{$widthTablet}) {
+    @content;
+  }
+} ;

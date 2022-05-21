@@ -8,6 +8,7 @@ import node from '../../assets/LogosNodejs.svg';
 import wordpress from '../../assets/BxlWordpress.svg';
 import mysql from '../../assets/LogosMysql.svg';
 import fleche from '../../assets/vers-le-bas.png';
+import flecheHaut from '../../assets/vers-le-haut.png';
 import './contact.scss';
 
 const Contact = () => {
@@ -70,9 +71,14 @@ const Contact = () => {
           .
         </p>
       </div>
-      <a href="#portfolio">
-        <img src={fleche} alt="" />
-      </a>
+      <div className="change-page">
+        <a href="#intro">
+          <img src={flecheHaut} alt="" />
+        </a>
+        <a href="#portfolio">
+          <img src={fleche} alt="" />
+        </a>
+      </div>
     </div>
   );
 };
