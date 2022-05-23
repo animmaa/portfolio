@@ -25,7 +25,7 @@ const Contact = () => {
           Après 10 ans dans le secteur de l'animation et du social, j'ai
           effectué une reconversion professionnel dans le domaine du web.
         </p>
-        <h2>Les langages que j'ai déjà utilisés :</h2>
+        <h2>Les langages et technologies que j'ai déjà utilisés :</h2>
         <div className="orga-icon">
           <div className="circle-img">
             <img src={html} alt="" />

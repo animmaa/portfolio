@@ -44,12 +44,17 @@ const Portfolio = () => {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <a href={d.url}>
-              <img src={d.img} alt="" />
-            </a>
+          <div className="direction-card">
+            <div className="item">
+              <a href={d.url}>
+                <img src={d.img} alt="" />
+              </a>
 
-            <h3>{d.title}</h3>
+              <h3>{d.title}</h3>
+            </div>
+            <div className='descriptif-card'>
+              {d.descriptif}
+            </div>
           </div>
         ))}
       </div>
@@ -65,11 +70,10 @@ const Portfolio = () => {
           </i>
         </p>
       </div>
-      <div className='flech'>
-
-      <a href="#contact">
-        <img src={flecheHaut} alt="" />
-      </a>
+      <div className="flech">
+        <a href="#contact">
+          <img src={flecheHaut} alt="" />
+        </a>
       </div>
     </div>
   );

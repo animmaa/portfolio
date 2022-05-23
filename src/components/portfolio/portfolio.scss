@@ -45,6 +45,10 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
+      @include desktop {
+        width: 420px;
+      height: 280px;
+      }
 
       h3 {
         position: absolute;
@@ -66,6 +70,25 @@
           }
         }
       }
+    }
+    
+    .direction-card {
+      @include tablet {
+        display: flex;
+        
+      }
+      .descriptif-card {
+      margin: 20px;
+      text-align: center;
+      @include tablet {
+        width: 250px;
+        display: flex;
+        align-items: center;
+      }
+      @include desktop {
+        font-size: 20px;
+      }
+    }
     }
   }
   .flech {
